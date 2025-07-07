@@ -1,10 +1,10 @@
 import React from 'react';
 import { 
   BanknotesIcon, 
-  TargetIcon, 
   CheckCircleIcon, 
   ClockIcon 
 } from '@heroicons/react/24/outline';
+import { Target } from 'lucide-react';
 
 interface DashboardStatsProps {
   totalSavings: number;
@@ -39,7 +39,7 @@ export const DashboardStats: React.FC<DashboardStatsProps> = ({
     {
       name: 'Active Goals',
       value: activeGoals.toString(),
-      icon: TargetIcon,
+      icon: Target,
       color: 'bg-blue-500',
       change: '+2',
       changeType: 'increase',
